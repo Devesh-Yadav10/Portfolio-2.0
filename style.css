@@ -4,7 +4,8 @@
     font-family: 'Roboto';
     src: url(font/RobotoCondensed-VariableFont_wght.ttf) format('truetype')
 }
-
+.review1{animation: showelement both;
+    animation-timeline: view(70% 0%);}
 @font-face {
     font-family: 'Fontania';
     src: url(font/Fontania.otf) format('opentype')
