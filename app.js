@@ -1,1 +1,6 @@
-$(".right img").on('mouseover',function(){$(".right").addClass("paused");$(".hover-text").animate({opacity:1},300)});$(".right img").on('mouseout',function(){$(".right").removeClass("paused");$(".hover-text").animate({opacity:0},200)});$(".project").on('mouseover',function(){$(".project").addClass("paused")});var itemhovered=$(".contacts-image img");for(var i=0;i<itemhovered.length;i++){$(itemhovered[i]).on('mouseover',function(){var colorId=$(this).attr('id');if(colorId){$(this).css('filter',`drop-shadow(0 0 3px #${colorId})`)}});$(itemhovered[i]).on('mouseout',function(){var colorId=$(this).attr('id');if(colorId){$(this).css('filter',`drop-shadow(0 0 0px #${colorId})`)}})}
+$(".right img").on('mouseover',function(){
+    $(".hover-text").animate({opacity:1},300)
+});
+$(".right img").on('mouseout',function(){
+    $(".hover-text").animate({opacity:0},200)
+});
