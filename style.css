@@ -4,8 +4,7 @@
     font-family: 'Roboto';
     src: url(font/RobotoCondensed-VariableFont_wght.ttf) format('truetype')
 }
-.review1{animation: showelement both;
-    animation-timeline: view(70% 0%);}
+
 @font-face {
     font-family: 'Fontania';
     src: url(font/Fontania.otf) format('opentype')
@@ -295,10 +294,11 @@ li {
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
-    animation: showelement both;
-    animation-timeline: view(70% 0%);
+    
 }
-
+.review1{
+    width: 30%;
+}
 .review-box,
 .review-extra {
     width: max-content;
@@ -311,7 +311,7 @@ h3 {
 }
 
 .review-box {
-    width: 30%;
+    width: 100%;
     background: linear-gradient(to right, #851410, rgb(254, 0, 0));
     display: flex;
     font-family: Poppins;
@@ -345,7 +345,8 @@ h3 {
 .review-extra {
     display: flex;
     flex-direction: column;
-
+    animation: showelement both;
+    animation-timeline: view(90% 0%);
     width: 45%;
 
 }
@@ -444,7 +445,10 @@ h3 {
         --angle: 360deg
     }
 }
-
+.review1{
+    animation: showelement both;
+    animation-timeline: view(70% 0%);
+}
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -501,11 +505,22 @@ h3 {
     .review-section {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-left: 15px;
     }
 
     .review-box {
+        width: 100%;
+    }
+    .review1{
         width: 75%;
+    }
+    .review-extra {
+        width: 90%;
+    }
+
+    .hover-text {
+        font-size: 15px;
+
     }
 
     .review-extra {
