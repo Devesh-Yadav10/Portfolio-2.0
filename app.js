@@ -3,4 +3,7 @@ $(".right img").on('mouseover',function(){
 });
 $(".right img").on('mouseout',function(){
     $(".hover-text").animate({opacity:0},200)
+
 });
+
+
